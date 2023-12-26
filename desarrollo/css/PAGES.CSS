@@ -1,0 +1,64 @@
+
+/* Estilo para los elementos li dentro de la sección */
+.TITLE{
+    font-size: 34px;
+   align-items: justify;
+    color:#341C8C;
+}
+.SUBTITULO{
+    color:#341C8C; 
+}
+.SUBTTLO2{
+    color: #341C8C;
+}
+section{
+    margin-right: 4%;
+}
+section div {
+    margin-left: 3%;
+    font-size: 24px;
+    font-family: "arial";
+}
+
+section h1 {
+    color: #341C8C
+}
+section div {
+    margin-left: 3%;
+    font-family: "arial";
+
+}
+section img {
+    margin-left: 10%;
+}
+section div h1 {
+    color: #341C8C;
+    font-size: 28px;
+}
+
+section p {
+    font-size: 24px;
+}
+
+
+/* Estilo para los enlaces dentro de los elementos li dentro de la sección */
+section  a {
+    text-decoration: none;
+    /* Quita el subrayado predeterminado del enlace */
+    color: #F26716;
+    /* Color del texto del enlace */
+    font-weight: bold;
+    /* Peso de la fuente en negrita */
+    font-size: 20px;
+    font-family: "arial";
+}
+
+/* Estilo para los enlaces cuando se pasan por encima dentro de la sección */
+section   h3:hover {
+    color: #341C8C;
+    /* Cambia el color del texto al pasar el ratón por encima del enlace */
+}
+section   li a:hover {
+    color: #341C8C;
+    /* Cambia el color del texto al pasar el ratón por encima del enlace */
+}

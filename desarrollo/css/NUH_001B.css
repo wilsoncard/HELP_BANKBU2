@@ -1,0 +1,35 @@
+section{
+    margin-top: 5%;
+    margin-left: 6%;
+}
+section img {
+    display: block; /* Hace que la imagen sea un bloque para que ocupe todo el ancho disponible */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+    margin-bottom: 10px; /* Espacio inferior entre la imagen y el texto */
+}
+
+/* Estilo para los párrafos */
+section p {
+    text-align: justify; /* Justifica el texto */
+    margin-bottom: 20px; /* Espacio inferior entre los párrafos */
+    width:85%
+}
+.TITLE{
+    font-size: 24px;
+    COLOR:#F26716;
+    font-weight: bold;
+}
+.SUBTITULO{
+    font-size: 20px;
+        COLOR:#F26716;
+        font-weight: bold;
+
+
+}
+.SUBTTLO2{
+    font-size: 20px;
+    color:#F26716;
+    font-weight: bold;
+
+}

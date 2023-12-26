@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header {
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+    position: relative;
+}
+
+header img.logo {
+    max-height: 80px; /* Ajusta el tamaño del logo según tus necesidades */
+    width: auto;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+#menuBtn {
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 20px;
+    z-index: 1;
+}
+
+#menuBtn img {
+    height: auto;
+    max-width: 80%;
+    transition: opacity 0.5s; /* Agregado para animar la transición de opacidad */
+}
+
+nav {
+    width: 70%;
+    max-width: 250px;
+    height: 100%;
+    background-color: #341C8C;
+    position: fixed;
+    top: 0;
+    left: -70%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+nav a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #5c3aff;
+}
+
+nav ul ul {
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+nav ul li:hover ul {
+    visibility: visible;
+    max-height: 100%;
+}
+section {
+    margin-top: 30px;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 15%;
+    transition: margin-left 0.5s; /* Agregado para animar el desplazamiento del contenido */
+}
+
+section h1, h3 {
+    color: #F26716;
+}
+footer {
+    margin-top: 10%;
+    background-color: #341C8C;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2%;
+    transition: margin-left 0.5s; /* Agregado para animar el desplazamiento del pie de página */
+}
+
+
+footer p {
+    text-align: right;
+    margin-right: 2%;
+}
+
+footer a {
+    color: #F26716;
+}
+
+footer div {
+    height: 80px;
+    width: auto;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    text-align: left;
+}
+
+.aviso-importante {
+    color: #F26716;
+}
+
+/* Estilo para el contenido cuando el menú está abierto */
+body.menu-opened section {
+    margin-left: 250px; /* Ajusta según el ancho de tu menú */
+}
+body.menu-opened #menuBtn img {
+    opacity: 0;
+    pointer-events: none; /* Evitar clics en la imagen oculta */
+}
+/* Ajuste para desplazar el pie de página hacia la derecha cuando el menú está abierto */
+body.menu-opened footer {
+    margin-left: 250px; /* Ajusta según el ancho de tu menú */
+}
