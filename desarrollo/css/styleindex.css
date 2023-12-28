@@ -1,5 +1,6 @@
 section{
-    margin-top: 30px;
+    max-width: 90%;
+    margin-top: 7vh;
 }
 section h1, h3 {
     color: #F26716;

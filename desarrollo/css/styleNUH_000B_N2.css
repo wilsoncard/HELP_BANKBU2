@@ -1,6 +1,6 @@
-
 /* Estilo para los elementos li dentro de la sección */
 .TITLE{
+    position:center;
     font-size: 34px;
    align-items: justify;
     color:#341C8C;
@@ -8,13 +8,16 @@
 .SUBTTLO2{
     color: #341C8C;
 }
+
 section div {
+    margin-top: 7vh;
     margin-left: 3%;
     font-size: 24px;
     font-family: "arial";
 }
 
 section h1 {
+
     color: #341C8C
 }
 section div {
