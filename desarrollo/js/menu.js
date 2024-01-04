@@ -27,27 +27,23 @@ function openMenu() {
                 }
             });
     // Agregar evento de clic a las opciones principales
-var mainOptions = document.querySelectorAll(".main-option");
+document.addEventListener("DOMContentLoaded", function () {
+  // Obtén todas las opciones principales
+  var opcionesPrincipales = document.querySelectorAll('.opcion-principal');
 
-mainOptions.forEach(function (option) {
-    option.addEventListener("click", function (e) {
-        e.stopPropagation(); // Evita que el clic se propague al documento
-        var submenu = this.nextElementSibling; // Obtener el elemento hermano siguiente (ul)
-        var isOpen = submenu.style.maxHeight === "200px"; // Verifica si el menú está abierto
-        mainOptions.forEach(function (mainOption) {
-            var otherSubmenu = mainOption.nextElementSibling;
-            if (otherSubmenu !== submenu) {
-                otherSubmenu.style.maxHeight = "0";
-            }
-        });
-        if (!isOpen) {
-            submenu.style.maxHeight = "200px"; // O la altura máxima que desees
-        } else {
-            submenu.style.maxHeight = "0";
-        }
+  // Itera sobre ellas para agregar un evento de clic
+  opcionesPrincipales.forEach(function(opcion) {
+    opcion.addEventListener('click', function() {
+      // Obtén el submenú de la opción actual
+      var subMenu = opcion.querySelector('.sub-menu');
+
+      // Alternar la visibilidad del submenú
+      if (subMenu) {
+        subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+      }
     });
+  });
 });
-    
             // Cerrar el men� al hacer clic fuera de �l
             document.addEventListener("click", function () {
                 closeMenu();

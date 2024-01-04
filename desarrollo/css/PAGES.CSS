@@ -1,64 +1,64 @@
+section {
+    text-align: justify !important;
+    margin-top: 4%;
+    margin-left: 12%; /* Ajuste para hacerlo más adaptable */
+}
 
-/* Estilo para los elementos li dentro de la sección */
-.TITLE{
-    font-size: 34px;
-   align-items: justify;
-    color:#341C8C;
+section table {
+    max-width: 80%;
+    width: 100%; /* Hace que la tabla sea responsive */
 }
-.SUBTITULO{
-    color:#341C8C; 
-}
-.SUBTTLO2{
-    color: #341C8C;
-}
-section{
-    margin-right: 4%;
-}
+
 section div {
-    margin-left: 3%;
-    font-size: 24px;
-    font-family: "arial";
+    margin-left: 1%;
+    font-size: 2vw; /* Utiliza unidades de vista del ancho para el tamaño de fuente */
+    font-family: "Arial", sans-serif;
 }
 
 section h1 {
-    color: #341C8C
+    color: #341C8C;
+    font-size: 3vw; /* Tamaño de fuente relativo */
 }
-section div {
-    margin-left: 3%;
-    font-family: "arial";
 
+section h2, h3 {
+    color: #341C8C;
+    font-size: 2.5vw; /* Tamaño de fuente relativo */
 }
+
 section img {
-    margin-left: 10%;
+    margin-left: 2%; /* Ajuste para hacerlo más adaptable */
+    max-width: 100%; /* Hace que la imagen sea responsive */
 }
+
 section div h1 {
     color: #341C8C;
-    font-size: 28px;
+    font-size: 3vw; /* Tamaño de fuente relativo */
 }
 
 section p {
-    font-size: 24px;
+    font-size: 2vw; /* Tamaño de fuente relativo */
 }
 
-
-/* Estilo para los enlaces dentro de los elementos li dentro de la sección */
-section  a {
+section a {
     text-decoration: none;
-    /* Quita el subrayado predeterminado del enlace */
     color: #F26716;
-    /* Color del texto del enlace */
     font-weight: bold;
-    /* Peso de la fuente en negrita */
-    font-size: 20px;
-    font-family: "arial";
+    font-size: 2vw; /* Tamaño de fuente relativo */
+    font-family: "Arial", sans-serif;
 }
 
-/* Estilo para los enlaces cuando se pasan por encima dentro de la sección */
-section   h3:hover {
+section h3:hover,
+section li a:hover {
     color: #341C8C;
-    /* Cambia el color del texto al pasar el ratón por encima del enlace */
 }
-section   li a:hover {
-    color: #341C8C;
-    /* Cambia el color del texto al pasar el ratón por encima del enlace */
+
+.TITLE {
+    font-size: 3vw; /* Tamaño de fuente relativo */
+    color: #341C8C !important;
+}
+
+.SUBTITULO,
+.SUBTTLO2 {
+    color: #341C8C !important;
+    font-size: 2.5vw; /* Tamaño de fuente relativo */
 }

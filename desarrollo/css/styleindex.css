@@ -1,11 +1,7 @@
 section{
+    text-align: justify !important;
     max-width: 90%;
-    margin-top: 7vh;
 }
-section h1, h3 {
-    color: #F26716;
-}
-
 
 section div h1 {
     color: #F26716;
@@ -20,7 +16,7 @@ section img {
 }
 
 section p {
-    font-size: 18px;
+    font-size: 22px;
     font-family: "Arial";
     max-width: 100%;
 }
